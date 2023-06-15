@@ -6,6 +6,19 @@
 
 plugins {
     id("multilib.kotlin-application-conventions")
+    kotlin("jvm") version "1.7.20"
+    id("org.openjfx.javafxplugin") version "0.0.13"
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+javafx {
+    version = "11.0.2"
+    modules = mutableListOf("javafx.controls", "javafx.graphics")
 }
 
 dependencies {
