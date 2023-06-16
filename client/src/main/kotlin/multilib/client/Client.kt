@@ -1,5 +1,6 @@
 package multilib.client
 
+import javafx.stage.Stage
 import multilib.client.gui.LoginView
 import multilib.client.modul.SingletonObject
 import multilib.utilities.input.*
@@ -12,16 +13,13 @@ fun main() {
     startKoin {
         modules(SingletonObject.mod)
     }
-    val input= InputSystem()
+    val input = InputSystem()
 
-    val commandProcessor: CommandProcessor = CommandProcessor()
-    commandProcessor.process(input)
+//    val commandProcessor: CommandProcessor = CommandProcessor()
+//    commandProcessor.process(input)
 
-//    launch<Client>()
-
-}
-
-class Client : App(LoginView::class)
-{
+    launch<Client>()
 
 }
+
+class Client : App(LoginView::class) {}

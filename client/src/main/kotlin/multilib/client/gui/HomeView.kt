@@ -5,7 +5,11 @@ import tornadofx.*
 class HomeView : View("Home") {
     override val root = borderpane {
         left = vbox {
-            button("Help")
+            button("Help") {
+                action {
+
+                }
+            }
             button("Info")
             button("Show")
             button("Add")

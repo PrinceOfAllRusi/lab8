@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3029cd4-295c-40f0-8340-2b7b2042e203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/server/multilib.server.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/HomeView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/LoginView.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/RegistrationView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/client/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/Client.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/Client.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/server/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/HomeView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/HomeView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/LoginView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/LoginView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/RegistrationView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/gui/RegistrationView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/modul/SingletonObject.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/modul/SingletonObject.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/tools/CommandProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/kotlin/multilib/client/tools/CommandProcessor.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,8 +169,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ServerKt" />
         <item itemvalue="Kotlin.ClientKt" />
+        <item itemvalue="Kotlin.ServerKt" />
       </list>
     </recent_temporary>
   </component>
@@ -202,17 +200,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/client/src/main/kotlin/multilib/client/tools/CommandProcessor.kt</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/server/src/main/kotlin/multilib/server/tools/CommandProcessor.kt</url>
           <line>41</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-function">
+          <url>file://$PROJECT_DIR$/client/src/main/kotlin/multilib/client/tools/CommandProcessor.kt</url>
+          <line>36</line>
+          <properties class="tools.CommandProcessor" method="process">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
