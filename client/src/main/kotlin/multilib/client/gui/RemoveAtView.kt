@@ -43,6 +43,8 @@ class RemoveAtView : View("Remove at") {
         }
     }
     override fun onDock() {
+        primaryStage.x = 650.0
+        primaryStage.y = 400.0
         primaryStage.width = 230.0
         primaryStage.height = 185.0
     }

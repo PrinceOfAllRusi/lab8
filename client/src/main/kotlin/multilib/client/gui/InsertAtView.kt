@@ -108,6 +108,8 @@ class InsertAtView : View("My View") {
         }
     }
     override fun onDock() {
+        primaryStage.x = 550.0
+        primaryStage.y = 200.0
         primaryStage.width = 340.0
         primaryStage.height = 460.0
     }

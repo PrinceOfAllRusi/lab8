@@ -52,7 +52,6 @@ class CommandProcessor: KoinComponent, Controller() {
                 sendCommandsData.setName(command)
                 xml = serializer.serialize(sendCommandsData)
 
-                println(xml)
                 socket.send(xml)
                 receivedData = socket.receive()
 

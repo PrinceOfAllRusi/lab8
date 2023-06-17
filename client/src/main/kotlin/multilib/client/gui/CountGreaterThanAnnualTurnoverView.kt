@@ -41,6 +41,8 @@ class CountGreaterThanAnnualTurnoverView : View("Count greater than annual turno
         }
     }
     override fun onDock() {
+        primaryStage.x = 650.0
+        primaryStage.y = 400.0
         primaryStage.width = 280.0
         primaryStage.height = 185.0
     }

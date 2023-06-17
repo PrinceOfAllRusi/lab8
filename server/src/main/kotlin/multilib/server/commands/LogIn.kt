@@ -1,6 +1,7 @@
 package multilib.server.commands
 
 import allForCommands.commands.AbstractCommand
+import allForCommands.commands.Save
 import multilib.server.dataBase.DataBaseWorker
 import multilib.utilities.tools.Hasher
 import multilib.utilities.commandsData.Token
@@ -42,6 +43,8 @@ class LogIn: AbstractCommand(), KoinComponent {
         token.setLogin(login)
         token.setTokenName(hasher.hashToken(login, token.getTime()))
         result.setToken(token)
+        val save = Save()
+        save.action(data, result)
         return result
     }
     override fun getDescription(): String = description

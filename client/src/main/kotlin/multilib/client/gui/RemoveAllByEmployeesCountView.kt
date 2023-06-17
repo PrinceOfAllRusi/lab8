@@ -41,6 +41,8 @@ class RemoveAllByEmployeesCountView : View("Remove all by employees count") {
         }
     }
     override fun onDock() {
+        primaryStage.x = 650.0
+        primaryStage.y = 400.0
         primaryStage.width = 260.0
         primaryStage.height = 185.0
     }

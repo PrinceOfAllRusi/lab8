@@ -41,6 +41,8 @@ class FilterStartsWithNameView : View("Filter starts with name") {
         }
     }
     override fun onDock() {
+        primaryStage.x = 650.0
+        primaryStage.y = 400.0
         primaryStage.width = 210.0
         primaryStage.height = 185.0
     }

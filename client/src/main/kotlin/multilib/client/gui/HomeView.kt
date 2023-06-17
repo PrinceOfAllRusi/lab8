@@ -1,5 +1,6 @@
 package multilib.client.gui
 
+import javafx.stage.Screen
 import multilib.utilities.input.InputFile
 import multilib.utilities.result.Result
 import tools.CommandProcessor
@@ -113,10 +114,9 @@ class HomeView : View("Home") {
             }
         }
     }
-    init {
-        reloadViewsOnFocus()
-    }
     override fun onDock() {
+        primaryStage.x = 400.0
+        primaryStage.y = 200.0
         primaryStage.width = 712.0
         primaryStage.height = 600.0
     }
