@@ -25,28 +25,28 @@ class CreateOrganization: KoinComponent {
         val zipCode: String
         val userLogin: String
 
-        if (data["name"]!!.isBlank()) {
+        if (data["name"]!!.isBlank() || data["name"]!! == ".") {
             name = lastOrganization!!.getName()!!
         } else name = data["name"]!!
-        if (data["annualTurnover"]!!.isBlank()) {
+        if (data["annualTurnover"]!!.isBlank() || data["annualTurnover"]!! == ".") {
             annualTurnover = lastOrganization!!.getAnnualTurnover()!!
         } else annualTurnover = data["annualTurnover"]!!.toDouble()
-        if (data["employeesCount"]!!.isBlank()) {
+        if (data["employeesCount"]!!.isBlank() || data["employeesCount"]!! == ".") {
             employeesCount = lastOrganization!!.getEmployeesCount()!!
         } else employeesCount = data["employeesCount"]!!.toInt()
-        if (data["x"]!!.isBlank()) {
+        if (data["x"]!!.isBlank() || data["x"]!! == ".") {
             x = lastOrganization!!.getCoordinatesX()
         } else x = data["x"]!!.toInt()
-        if (data["y"]!!.isBlank()){
+        if (data["y"]!!.isBlank() || data["y"]!! == "."){
             y = lastOrganization!!.getCoordinatesY()
         } else y = data["y"]!!.toLong()
-        if (data["type"]!!.isBlank()){
+        if (data["type"]!!.isBlank() || data["type"]!! == "."){
             type = lastOrganization!!.getType()!!
         } else type = OrganizationType.valueOf(data["type"]!!.uppercase())
-        if (data["street"]!!.isBlank()){
+        if (data["street"]!!.isBlank() || data["street"]!! == "."){
             street = lastOrganization!!.getPostalAddressStreet()
         } else street = data["street"]!!
-        if (data["zipCode"]!!.isBlank()){
+        if (data["zipCode"]!!.isBlank() || data["zipCode"]!! == "."){
             zipCode = lastOrganization!!.getPostalAddressZipCode()
         } else zipCode = data["zipCode"]!!
         if (data["userLogin"]!!.isBlank()) {

@@ -14,7 +14,10 @@ class LoginView : View("Login") {
     private var passwordField: TextField by singleAssign()
 
     override val root = vbox {
-        commandProcessor.getAllInfo()
+        if (commandProcessor.getCommandsList().getMapCommands().isEmpty()) {
+            commandProcessor.getAllInfo()
+        }
+
         form {
             fieldset("Personal Info") {
                 field("Login") {
@@ -52,24 +55,8 @@ class LoginView : View("Login") {
             }
         }
     }
-}
-
-class ResultFragment: Fragment() {
-    private val commandProcessor: CommandProcessor by inject()
-    override val root = gridpane {
-        row {
-            label (commandProcessor.getResult().getMessage()) {
-                gridpaneConstraints {
-                    marginTop = 10.0
-                    marginBottom = 10.0
-                    marginLeft = 10.0
-                    marginRight = 10.0
-                }
-                useMaxWidth = true
-                style {
-                    fontSize = 16.px
-                }
-            }
-        }
+    override fun onDock() {
+        primaryStage.width = 230.0
+        primaryStage.height = 210.0
     }
 }

@@ -59,7 +59,7 @@ class DataProcessing {
             map = commandData[key]!!
             while (true) {
                 value = input.getNextWord(map["title"])
-                if (value.isBlank()) {
+                if (value == ".") {
                     if (map.containsKey("null")) {
                         sendCommandsData.getMapData()[key] = value
                         break

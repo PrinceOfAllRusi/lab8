@@ -11,7 +11,8 @@ import multilib.utilities.result.Result
 class RemoveLower: AbstractCommand(), KoinComponent {
 
     private val orgs: MyCollection<Organization> by inject()
-    private val description: String = "remove from the collection all elements smaller than the given one"
+    private val description: String = "remove from the collection all elements whose street " +
+            "name length is less than the given one"
     private var fields: Map<String, Map<String, String>> = mapOf(
         "value" to mapOf<String, String>(
             "type" to "Int",

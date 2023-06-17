@@ -49,4 +49,8 @@ class RegistrationView : View("Registration") {
             }
         }
     }
+    override fun onDock() {
+        primaryStage.width = 230.0
+        primaryStage.height = 210.0
+    }
 }

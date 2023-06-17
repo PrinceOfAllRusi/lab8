@@ -22,4 +22,8 @@ fun main() {
 
 }
 
-class Client : App(LoginView::class) {}
+class Client : App(LoginView::class) {
+    init {
+        reloadViewsOnFocus()
+    }
+}

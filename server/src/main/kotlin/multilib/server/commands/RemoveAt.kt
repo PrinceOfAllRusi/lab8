@@ -19,7 +19,7 @@ class RemoveAt: AbstractCommand(), KoinComponent {
     )
 
     override fun action(data: Map<String, String?>, result: Result): Result {
-        val index = data["value"]!!.toInt() + 1
+        val index = data["value"]!!.toInt() - 1
         try {
             val org = orgs[index]
             if (org.getUserLogin() == result.getToken().getLogin()) {
